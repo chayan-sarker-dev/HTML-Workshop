@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Hotel Booking & Feedback Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>Smart Hotel Booking & Feedback Form</h1>
+        <p>Thank you for staying with us. Please provide feedback on your recent
+            stay.</p>
+    </header>
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full-name">Full Name (required):</label>
+                <input required type="text" id="full-name" name="name" placeholder="e.g., Tronoy Saha" size="20">
+                <label for="email">Email (required):</label>
+                <input required type="email" id="email" name="email" placeholder="example@gmail.com" size="20">
+                <label for="age">Age (optional):</label>
+                <input type="number" id="age" name="age" min="18" max="100">
+                <label for="phone-number">Phone Number (required):</label>
+                <input required type="tel" id="phone-number" name="phone-number">
+                <label for="country">Country (required):</label>
+                <input required type="text" id="country" name="country">
+                <label for="check-in">Check-in Date:</label>
+                <input required type="date" id="check-in" name="check-in">
+                <label for="check-out">Check-out Date:</label>
+                <input required type="date" id="check-out" name="check-out">
+            </fieldset>
+            <fieldset>
+                <legend>Booking Information</legend>
+                <input required type="radio" id="single-room" name="room" value="single-room">
+                <label for="single-room">Single Room</label>
+                <input type="radio" id="double-room" name="room" value="double-room">
+                <label for="double-room">Double Room</label>
+                <input type="radio" id="deluxe-room" name="room" value="deluxe-room">
+                <label for="deluxe-room">Deluxe Room</label>
+                <input type="radio" id="suite" name="room" value="suite">
+                <label for="suite">Suite</label>
+                <label for="guest">Number of Guests</label>
+                <input required type="number" id="guest" name="guest" min="1" max="10">
+            </fieldset>
+            <fieldset>
+                <legend>How did you find us?</legend>
+                <input type="checkbox" id="facebook" name="choice" value="facebook">
+                <label for="facebook">Facebook</label>
+                <input type="checkbox" id="youtube" name="choice" value="youtube">
+                <label for="youtube">Youtube</label>
+                <input type="checkbox" id="google" name="choice" value="google">
+                <label for="google">Google</label>
+                <input type="checkbox" id="friend" name="choice" value="friend">
+                <label for="friend">Friend</label>
+                <input type="checkbox" id="travel-website" name="choice" value="travel-website">
+                <label for="travel-website">Travel Website</label>
+                <input type="checkbox" id="ads" name="choice" value="ads">
+                <label for="ads">Advertisement</label>
+            </fieldset>
+            <fieldset>
+                <legend>Hotel Facilities</legend>
+                <input type="checkbox" id="swimming-pool" name="facilities" value="swimming-pool">
+                <label for="swimming-pool">Swimming Pool</label>
+                <input type="checkbox" id="gym" name="facilities" value="gym">
+                <label for="gym">Gym</label>
+                <input checked type="checkbox" id="restaurant" name="facilities" value="restaurant">
+                <label for="restaurant">Restaurant</label>
+                <input type="checkbox" id="spa" name="facilities" value="spa">
+                <label for="spa">Spa</label>
+                <input type="checkbox" id="wi-fi" name="facilities" value="wi-fi">
+                <label for="wi-fi">Free Wi-Fi</label>
+                <input type="checkbox" id="pickup" name="facilities" value="pickup">
+                <label for="pickup">Airport Pickup</label>
+            </fieldset>
+            <fieldset>
+                <legend>Service Ratings</legend>
+                <label for="cleanliness">Room Cleanliness</label>
+                <select name="cleanliness" id="cleanliness">
+                    <option value="poor">Poor</option>
+                    <option value="fair">Fair</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                    <option selected value="excellent">Excellent</option>
+                </select>
+                <label for="behavior">Staff Behavior</label>
+                <select name="behavior" id="behavior">
+                    <option value="poor">Poor</option>
+                    <option value="fair">Fair</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                    <option selected value="excellent">Excellent</option>
+                </select>
+                <label for="quality">Food Quality</label>
+                <select name="quality" id="quality">
+                    <option value="poor">Poor</option>
+                    <option value="fair">Fair</option>
+                    <option value="good">Good</option>
+                    <option value="very-good">Very Good</option>
+                    <option selected value="excellent">Excellent</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Was this your first stay at our hotel?</legend>
+                <input type="radio" id="yes-option" name="first-stay" value="yes">
+                <label for="yes-option">Yes</label>
+                <input type="radio" id="no-option" name="first-stay" value="no">
+                <label for="no-option">No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Would you recommend our hotel?</legend>
+                <input type="radio" id="definitely" name="recommend" value="definitely">
+                <label for="definitely">Definitely</label>
+                <input type="radio" id="maybe" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="no" name="recommend" value="no">
+                <label for="no">No</label>
+            </fieldset>
+            <label for="comments">Other comments</label>
+            <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+</body>
+
+</html>
